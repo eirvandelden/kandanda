@@ -1,2 +1,3 @@
 en:
-  hello: 'Welcome to your Maji app!'
+  match:
+    new: 'New match'

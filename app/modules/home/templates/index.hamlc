@@ -1,20 +1,4 @@
 .header= 'kandanda'
 
 .body
-  %p.welcome{style: 'margin-top: 0'}= @t('hello')
-
-  .drum#bass Bass
-  .drum#highat High Hat
-  .drum#snare Snare
-  .drum#bongo Bongo
-
-  %p
-    %strong Some example transitions:
-
-  %ul.listview
-    %li
-      %a{href: '#/detail', 'data-transition': 'slide'}= 'Slide'
-    %li
-      %a{href: '#/detail', 'data-transition': 'slideup'}= 'Slide up'
-    %li
-      %a{href: '#/detail', 'data-transition': 'flip'}= 'Flip'
+  %a.btn.new-match{href: '#/match/new', 'data-transition': 'slideup'}= @t('match.new')

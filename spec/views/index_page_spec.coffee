@@ -5,6 +5,6 @@ describe 'IndexPage', ->
   beforeEach ->
     @view = new IndexPage()
 
-  it 'shows a message', ->
+  it 'shows a "New match" button', ->
     DOM.append @view.render().el
-    expect(@view.$el.find('p.welcome').text().trim()).to.eq('Welcome to your Maji app!')
+    expect(@view.$el.find('a.new-match').text().trim(0)).to.eq('New match')
