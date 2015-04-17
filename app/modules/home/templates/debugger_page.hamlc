@@ -1,0 +1,6 @@
+.header= @t 'assignment1'
+  %a{href:'#/', class:'btn left', 'data-rel': 'back', 'data-transition': 'slide'}
+  = 'Detail'
+
+.body
+Don't forget to start the console <strong>before</strong> opening this page

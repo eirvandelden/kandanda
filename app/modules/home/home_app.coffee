@@ -7,11 +7,15 @@ HomeApp.startWithParent = false
 class HomeApp.Router extends Marionette.AppRouter
   appRoutes:
     ''       : 'home'
+    'assignment1-debugger' : 'debuggerPage'
 
 API =
   home: ->
-    IndexPage = require('./views/index_page')
+    IndexPage = require './views/index_page'
     app.mainRegion.show new IndexPage()
+  debuggerPage: ->
+    DebuggerPage = require './views/debugger_page'
+    app.mainRegion.show new DebuggerPage()
 
 HomeApp.addInitializer ->
   new HomeApp.Router

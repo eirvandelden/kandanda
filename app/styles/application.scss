@@ -63,6 +63,7 @@ a, a:active, a:hover, a:visited {
     top: 0px;
 
     color: $color-header-text;
+    background: none;
     font-size: 0.8em;
 
     &[data-rel=back] {
