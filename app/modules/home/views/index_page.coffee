@@ -7,7 +7,7 @@ class IndexPage extends ApplicationPage
   template: template
 
   events:
-    'click a': (e) ->
+    'click': (e) ->
       e.preventDefault()
       target = $(e.target)
 
