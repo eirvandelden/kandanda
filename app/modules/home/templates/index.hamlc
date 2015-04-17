@@ -3,11 +3,6 @@
 .body
   %p.welcome{style: 'margin-top: 0'}= @t('hello')
 
-  .drum#bass Bass
-  .drum#highat High Hat
-  .drum#snare Snare
-  .drum#bongo Bongo
-
   %p
     %strong Some example transitions:
 
