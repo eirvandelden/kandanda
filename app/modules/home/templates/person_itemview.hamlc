@@ -2,4 +2,4 @@
   Here is where the PersonItemView is rendered
 
 %strong= @t('person.name')
-.test= @name
+= @name
