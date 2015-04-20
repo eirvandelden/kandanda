@@ -7,6 +7,6 @@
     %ul
       %li
         %label.name= @t 'person.name'
-        %input.name
+        %input#name
 
   #person-region

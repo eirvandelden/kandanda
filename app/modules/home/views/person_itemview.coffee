@@ -6,4 +6,7 @@ class PersonItemView extends Marionette.ItemView
   template: template
   model: Person
 
+  modelEvents:
+    'change': 'render'
+
 module.exports = PersonItemView
