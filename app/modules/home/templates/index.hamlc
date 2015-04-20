@@ -11,3 +11,5 @@
       %a{href: '#/assignment1-debugger', 'data-transition': 'slide'}= @t 'assignment1'
     %li
       %a{href: '#/assignment2-views', 'data-transition': 'slide'}= @t 'assignment2'
+    %li
+      %a{href: '#/assignment3-collections', 'data-transition': 'slide'}= @t 'assignment3'
