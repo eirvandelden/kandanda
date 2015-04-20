@@ -1,5 +1,5 @@
 .header= @t 'assignment1'
-  %a{href:'#/', class:'btn left', 'data-rel': 'back', 'data-transition': 'slide'}
+  %a{href:'#/', class:'btn left', 'data-rel': 'back'}
   = 'Detail'
 
 .body
