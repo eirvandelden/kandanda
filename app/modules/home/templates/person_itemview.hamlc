@@ -1,4 +1,5 @@
 %p
   Here is where the PersonItemView is rendered
 
-%strong= @t('person.name'), @name
+%strong= @t('person.name')
+= @name
