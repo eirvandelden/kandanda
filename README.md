@@ -1,5 +1,6 @@
 # kandanda
 
+This contains all assignment for the [Maji Mobile Training](http://maji.kabisa.nl).
 
 ## Getting started
 
