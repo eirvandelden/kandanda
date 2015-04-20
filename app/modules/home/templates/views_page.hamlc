@@ -1,4 +1,5 @@
 .header= @t 'assignment2'
+  %a{href:'#/', class:'btn left', 'data-rel': 'back'}
 
 .body
   #person-form

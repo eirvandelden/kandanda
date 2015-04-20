@@ -12,11 +12,6 @@ class ViewsPage extends ApplicationPage
 
   events:
     'keyup input': 'changeModel'
-    'click': (e) ->
-      e.preventDefault()
-      target = $(e.target)
-
-      @navigate(target.attr('href'), transition: target.data('transition'))
 
   initialize: ->
     #TODO: instantiate a global variable for the Person Model

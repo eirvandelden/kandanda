@@ -4,3 +4,5 @@ en:
   assignment2: 'A2: Models and Views'
   person:
     name: 'Name'
+    address: 'Address'
+    city: 'City'
