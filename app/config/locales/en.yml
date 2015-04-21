@@ -10,3 +10,6 @@ en:
   todo:
     placeholder: '… what do you want to do?'
     submit: 'Add'
+  camera:
+    header: 'Camera'
+    button: 'Snap a photo!'

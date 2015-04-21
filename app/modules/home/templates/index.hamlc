@@ -13,3 +13,5 @@
       %a{href: '#/assignment2-views', 'data-transition': 'slide'}= @t 'assignment2'
     %li
       %a{href: '#/assignment3-collections', 'data-transition': 'slide'}= @t 'assignment3'
+    %li
+      %a{href: '#/camera', 'data-transition': 'slideup'}= @t 'camera.header'
