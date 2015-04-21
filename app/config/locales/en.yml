@@ -7,3 +7,6 @@ en:
     name: 'Name'
     address: 'Address'
     city: 'City'
+  todo:
+    placeholder: '… what do you want to do?'
+    submit: 'Add'

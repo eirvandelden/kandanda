@@ -3,4 +3,7 @@
 
 .body
   #entry-form
+    %input{id: 'todo', type: 'text', placeholder: "#{@t('todo.placeholder')}"}
+    %a#submit.btn= @t 'todo.submit'
+
   #collections-view
