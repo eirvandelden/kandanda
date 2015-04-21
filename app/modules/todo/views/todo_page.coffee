@@ -6,8 +6,7 @@ class CollectionsPage extends ApplicationPage
   template: template
 
   regions:
-    '#entry-form': 'entryForm'
-    '#collections-view': 'collectionView'
+    'collectionView': '#collection-view'
 
   onRender: ->
     debugger
