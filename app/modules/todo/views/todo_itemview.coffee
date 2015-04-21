@@ -6,4 +6,10 @@ class TodoItemView extends Marionette.ItemView
   tagName: 'li'
   className: 'todo'
 
+  events:
+    'click input.complete': 'complete'
+
+  complete: ->
+    @model.set('completed', !@model.get('completed'))
+
 module.exports = TodoItemView
