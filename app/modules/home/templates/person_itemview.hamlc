@@ -4,7 +4,7 @@
 %ul
   %li
     %strong= @t 'person.name'
-    = @name
+    = @name #this syntax displays the 'name' attribute of a model
   %li
     %strong= @t 'person.address'
     = @address
