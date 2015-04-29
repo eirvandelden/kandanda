@@ -1,6 +1,6 @@
 Marionette = require 'backbone.marionette'
 Person     = require '../models/person_model'
-template   = require '../templates/person_itemview'
+template   = require '../templates/assignment2_view'
 
 class Assignment2View extends Marionette.ItemView
   template: template
