@@ -1,6 +1,4 @@
-.header= @t 'assignment3'
+.header= @t 'assignment3.header'
   %a{href:'#/', class:'btn left', 'data-rel': 'back', 'data-transition': 'slide'}
 
 .body
-  #entry-form
-  #collections-view
