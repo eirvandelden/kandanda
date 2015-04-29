@@ -8,6 +8,6 @@
 
   %ul.listview
     %li
-      %a.assignement{href: '#/assignment1-debugger', 'data-transition': 'slide'}= @t 'assignment1'
+      %a.assignment{href: '#/assignment1-debugger', 'data-transition': 'slide'}= @t 'assignment1'
     %li
-      %a.assignement{href: '#/assignment2-views', 'data-transition': 'slide'}= @t 'assignment2'
+      %a.assignment{href: '#/assignment2-views', 'data-transition': 'slide'}= @t 'assignment2'
