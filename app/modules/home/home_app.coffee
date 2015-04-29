@@ -8,7 +8,7 @@ class HomeApp.Router extends Marionette.AppRouter
   appRoutes:
     ''       : 'home'
     'assignment1-debugger' : 'debuggerPage'
-    'assignment2-views': 'viewsPage'
+    'assignment2-views': 'assignment2Page'
 
 API =
   home: ->
@@ -17,9 +17,9 @@ API =
   debuggerPage: ->
     Assignment1Page = require './views/assignment1_page'
     app.mainRegion.show new Assignment1Page()
-  viewsPage: ->
-    ViewsPage = require './views/views_page'
-    app.mainRegion.show new ViewsPage()
+  assignment2Page: ->
+    Assignment2Page = require './views/assignment2_page'
+    app.mainRegion.show new Assignment2Page()
 
 HomeApp.addInitializer ->
   new HomeApp.Router

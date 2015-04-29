@@ -2,7 +2,7 @@ Marionette = require 'backbone.marionette'
 Person     = require '../models/person_model'
 template   = require '../templates/person_itemview'
 
-class PersonItemView extends Marionette.ItemView
+class Assignment2View extends Marionette.ItemView
   template: template
   model: Person
 
@@ -10,4 +10,4 @@ class PersonItemView extends Marionette.ItemView
     'change': 'render' #this event handler listens to the change event of it's model
                        #  and calls render() when it changes
 
-module.exports = PersonItemView
+module.exports = Assignment2View
