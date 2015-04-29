@@ -14,8 +14,8 @@ API =
     IndexPage = require './views/index_page'
     app.mainRegion.show new IndexPage()
   debuggerPage: ->
-    DebuggerPage = require './views/debugger_page'
-    app.mainRegion.show new DebuggerPage()
+    Assignment1Page = require './views/assignment1_page'
+    app.mainRegion.show new Assignment1Page()
 
 HomeApp.addInitializer ->
   new HomeApp.Router
