@@ -7,6 +7,7 @@ class PersonItemView extends Marionette.ItemView
   model: Person
 
   modelEvents:
-    'change': 'render'
+    'change': 'render' #this event handler listens to the change event of it's model
+                       #  and calls render() when it changes
 
 module.exports = PersonItemView
