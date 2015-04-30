@@ -1,6 +1,0 @@
-.header= @t 'camera.header'
-  %a{href:'#/', class:'btn left', 'data-rel': 'back'}
-
-.body
-  This will be the main page for the Camera App!
-  %a.btn#camera= @t 'camera.button'

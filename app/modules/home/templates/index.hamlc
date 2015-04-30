@@ -16,4 +16,4 @@
     %li
       %a.assignment{ href: '#/gps', 'data-transition': 'slide' }= @t 'gps.name'
     %li
-      %a.assignment{href: '#/camera', 'data-transition': 'slideup'}= @t 'camera.header'
+      %a.assignment{href: '#/assignment4', 'data-transition': 'slideup'}= @t 'camera.header'

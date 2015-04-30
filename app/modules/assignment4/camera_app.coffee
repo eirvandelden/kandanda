@@ -6,7 +6,7 @@ CameraApp.startWithParent = false
 
 class CameraApp.Router extends Marionette.AppRouter
   appRoutes:
-    'camera': 'camera'
+    'assignment4': 'camera'
 
 API =
   camera: ->
