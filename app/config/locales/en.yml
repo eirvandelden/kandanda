@@ -5,6 +5,8 @@ en:
   assignment3:
     name: 'A3: Collections and CollectionViews'
     header: 'Todo App'
+    placeholder: 'clear your thoughts…'
+    submit: 'Add'
   person:
     name: 'Name'
     address: 'Address'

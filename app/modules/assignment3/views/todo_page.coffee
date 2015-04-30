@@ -18,7 +18,8 @@ class CollectionsPage extends ApplicationPage
   initialize: ->
     @collection = new TodosCollection
 
-  addModel: ->
+  addModel: (e) ->
+    e.preventDefault()
     val =  @$('#todo').val()
     unless _.isEmpty val
       @collection.add new TodoModel({title: val})
