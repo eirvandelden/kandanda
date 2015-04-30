@@ -11,3 +11,8 @@ en:
     name: 'Name'
     address: 'Address'
     city: 'City'
+  gps:
+    name: 'GPS Plugin example'
+    get: 'Get your current location!'
+    longitude: 'Longitude'
+    latitude: 'Latitude'
