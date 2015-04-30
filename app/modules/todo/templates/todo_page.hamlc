@@ -1,9 +1,0 @@
-.header= @t 'assignment3'
-  %a{href:'#/', class:'btn left', 'data-rel': 'back', 'data-transition': 'slide'}
-
-.body
-  #entry-form
-    %input{id: 'todo', type: 'text', placeholder: "#{@t('todo.placeholder')}"}
-    %a#submit.btn= @t 'todo.submit'
-
-  #collections-view

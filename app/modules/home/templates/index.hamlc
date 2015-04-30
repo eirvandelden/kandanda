@@ -8,10 +8,12 @@
 
   %ul.listview
     %li
-      %a{href: '#/assignment1-debugger', 'data-transition': 'slide'}= @t 'assignment1'
+      %a.assignment{href: '#/assignment1-debugger', 'data-transition': 'slide'}= @t 'assignment1'
     %li
-      %a{href: '#/assignment2-views', 'data-transition': 'slide'}= @t 'assignment2'
+      %a.assignment{href: '#/assignment2-views', 'data-transition': 'slide'}= @t 'assignment2'
     %li
-      %a{href: '#/assignment3-collections', 'data-transition': 'slide'}= @t 'assignment3'
+      %a.assignment{href: '#/assignment3-collections', 'data-transition': 'slide'}= @t 'assignment3.name'
     %li
-      %a{href: '#/camera', 'data-transition': 'slideup'}= @t 'camera.header'
+      %a.assignment{ href: '#/gps', 'data-transition': 'slide' }= @t 'gps.name'
+    %li
+      %a.assignment{href: '#/camera', 'data-transition': 'slideup'}= @t 'camera.header'

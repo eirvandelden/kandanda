@@ -1,6 +1,6 @@
 require '../view_spec_helper'
-TodoPage  = require '../../app/modules/todo/views/todo_page'
-TodoModel = require '../../app/modules/todo/models/todo_model'
+TodoPage  = require '../../app/modules/assignment3/views/todo_page'
+TodoModel = require '../../app/modules/assignment3/models/todo_model'
 
 describe 'TodoPage', ->
   beforeEach ->

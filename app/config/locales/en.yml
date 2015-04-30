@@ -2,14 +2,20 @@ en:
   hello: 'Here are a list of assignments for the Maji Mobile Training'
   assignment1: 'A1: Using Backbone from the Console'
   assignment2: 'A2: Models and Views'
-  assignment3: 'A3: Collections and CollectionViews'
+  assignment3:
+    name: 'A3: Collections and CollectionViews'
+    header: 'Todo App'
+    placeholder: 'clear your thoughts…'
+    submit: 'Add'
   person:
     name: 'Name'
     address: 'Address'
     city: 'City'
-  todo:
-    placeholder: '… what do you want to do?'
-    submit: 'Add'
+  gps:
+    name: 'GPS Plugin example'
+    get: 'Get your current location!'
+    longitude: 'Longitude'
+    latitude: 'Latitude'
   camera:
     header: 'Camera'
     button: 'Snap a photo!'

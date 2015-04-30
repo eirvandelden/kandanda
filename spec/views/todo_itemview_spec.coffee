@@ -1,5 +1,6 @@
 require '../view_spec_helper'
-TodoItemView = require '../../app/modules/todo/views/todo_itemview'
+
+TodoItemView = require '../../app/modules/assignment3/views/todo_itemview'
 Backbone     = require 'backbone'
 
 describe 'TodoItemView', ->
