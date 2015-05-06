@@ -1,0 +1,6 @@
+%input.complete{type: 'checkbox'}
+= @title
+- if @has_photo
+  smile
+%button.take_photo
+  Take me

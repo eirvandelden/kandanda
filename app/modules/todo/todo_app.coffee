@@ -6,11 +6,11 @@ TodoApp.startWithParent = false
 
 class TodoApp.Router extends Marionette.AppRouter
   appRoutes:
-    'assignment3-collections' : 'todo'
+    'todos' : 'todo'
 
 API =
   todo: ->
-    TodoPage = require './views/todo_page'
+    TodoPage = require './views/pages/todo_page'
     app.mainRegion.show new TodoPage()
 
 TodoApp.addInitializer ->

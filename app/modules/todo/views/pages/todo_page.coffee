@@ -1,8 +1,8 @@
-ApplicationPage     = require '../../../views/application_page'
-TodosCollection     = require '../collections/todos_collection'
-TodoModel           = require '../models/todo_model'
-TodosCollectionView = require './todos_collectionview'
-template            = require '../templates/todo_page'
+ApplicationPage     = require '../../../../views/application_page'
+TodoModel           = require '../../models/todo_model'
+TodosCollection     = require '../../collections/todos_collection'
+TodosCollectionView = require '../collection_views/todos_collectionview'
+template            = require '../../templates/pages/todo_page'
 $                   = require 'jquery'
 _                   = require 'underscore'
 
@@ -17,6 +17,10 @@ class CollectionsPage extends ApplicationPage
 
   initialize: ->
     @collection = new TodosCollection
+    
+    # Create some basic items
+
+
 
   addModel: (e) ->
     e.preventDefault()
@@ -28,5 +32,13 @@ class CollectionsPage extends ApplicationPage
   onRender: ->
     todosCollectionView = new TodosCollectionView(collection: @collection)
     @collectionView.show todosCollectionView
+    t = new TodoModel()
+    t.has_photo()
+
+   
+
+
+
+  # ------------------------------------------------------------------------- #
 
 module.exports = CollectionsPage
