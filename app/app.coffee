@@ -12,10 +12,7 @@ app = new Maji.Application
   showTransitions: PageTransitionSupportDetector.supportsTransitions()
 
 app.addInitializer ->
-  require('./modules/home/home_app').start()
-  require('./modules/assignment3/todo_app').start()
-  require('./modules/gps/gps_app').start()
-  require('./modules/assignment4/camera_app').start()
+  require('./modules/todo/todo_app').start()
 
 app.on 'initialize:after', (options) ->
   Backbone.history.start(root: 'index.html', silent: true)
