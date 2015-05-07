@@ -1,0 +1,4 @@
+.header= @t 'assignment3.header'
+  %a{href:'#/', class:'btn left', 'data-rel': 'back', 'data-transition': 'slide'}
+
+.body

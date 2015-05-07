@@ -8,6 +8,12 @@
     %ul
       %li
         %label.name= @t 'person.name'
-        %input.name
+        %input#name
+      %li
+        %label.address= @t 'person.address'
+        %input#address
+      %li
+        %label.city= @t 'person.city'
+        %input#city
 
   #person-region

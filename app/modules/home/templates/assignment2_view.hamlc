@@ -1,5 +1,13 @@
 %p
   Here is where the PersonItemView is rendered
 
-%strong= @t('person.name')
-= @name #this syntax displays the 'name' attribute of a model
+%ul
+  %li
+    %strong= @t 'person.name'
+    = @name #this syntax displays the 'name' attribute of a model
+  %li
+    %strong= @t 'person.address'
+    = @address
+  %li
+    %strong= @t 'person.city'
+    = @city
