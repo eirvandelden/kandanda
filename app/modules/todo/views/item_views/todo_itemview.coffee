@@ -41,6 +41,7 @@ class TodoItemView extends Marionette.ItemView
   # after taking the photo, store it in the model
   cameraSuccess: (url) ->
     @model.store_photo(url)
+    # $('img.todo_photo').attr('src', url)
     
   cameraError: (error) -> 
     @debugMessage error
