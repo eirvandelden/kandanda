@@ -128,3 +128,53 @@ a, a:active, a:hover, a:visited {
     }
   }
 }
+
+/**
+ * Nieuwe todo's toevoegen
+ */
+.new-todos {
+  button {
+    display: block;
+    margin: 0 auto;
+
+    background-color: #004c9c;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 3px;
+  }
+}
+
+/**
+ * Lijst van todo's
+ */
+.todos {
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 1em;
+    position: relative;
+    text-indent: 5em;
+    border-top: 1px solid lightgrey;
+
+    &:last-child {
+      border-bottom: 1px solid lightgrey;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+  .finish {
+    float: right;
+    background-color: lightgrey;
+    color: white;
+    border: none;
+    border-radius: 3px;
+  }
+}
