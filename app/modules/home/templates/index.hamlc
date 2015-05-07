@@ -13,3 +13,5 @@
       %a.assignment{href: '#/assignment2-views', 'data-transition': 'slide'}= @t 'assignment2'
     %li
       %a.assignment{href: '#/assignment3-collections', 'data-transition': 'slide'}= @t 'assignment3.name'
+    %li
+      %a.assignment{ href: '#/gps', 'data-transition': 'slide' }= @t 'gps.name'

@@ -2,3 +2,8 @@
   %a{href:'#/', class:'btn left', 'data-rel': 'back', 'data-transition': 'slide'}
 
 .body
+  #entry-form
+    %input{id: 'todo', type: 'text', placeholder: "#{@t 'assignment3.placeholder' }"}
+    %a#submit.btn{href: '#/assignment3-collections'}= @t 'assignment3.submit'
+
+  #collections-view

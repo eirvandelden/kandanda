@@ -1,3 +1,4 @@
 # Add your plugins here, one per line
 org.apache.cordova.splashscreen
+org.apache.cordova.geolocation https://github.com/apache/cordova-plugin-geolocation
 com.mallzee.plugin.networkactivity https://github.com/mallzee/network-activity.git#0904b83c3109560bad8e7dd9be1320bb9303899d

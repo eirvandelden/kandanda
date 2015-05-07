@@ -5,6 +5,7 @@ describe 'IndexPage', ->
   beforeEach ->
     @view = new IndexPage()
 
-  it 'shows a "New match" button', ->
+  it 'shows three assignments', ->
     DOM.append @view.render().el
-    expect(@view.$el.find('a.new-match').text().trim(0)).to.eq('New match')
+    assignments = ['A1', 'A2', 'A3']
+    expect(@view.$el.find('.listview').text().trim(0)).to.contain assignment for assignment in assignments

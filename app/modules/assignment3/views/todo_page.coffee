@@ -1,30 +1,32 @@
-ApplicationPage = require('../../../views/application_page')
-template        = require('../templates/todo_page')
-$               = require('jquery')
+ApplicationPage     = require '../../../views/application_page'
+TodosCollection     = require '../collections/todos_collection'
+TodoModel           = require '../models/todo_model'
+TodosCollectionView = require './todos_collectionview'
+template            = require '../templates/todo_page'
+$                   = require 'jquery'
+_                   = require 'underscore'
 
 class CollectionsPage extends ApplicationPage
   template: template
 
-  #TODO:
-  # - Make a TodoList collection;
-  #     this collection will keep track of all todos, it represents the list
-  # - Make a Todo Model;
-  #     this model represents a single todo-able item
-  # - Make an input field where a user can type in the thing-to-do;
-  #     when pressing enter, the value of this input field should be used to
-  #     create a new Todo model and be added to the Collection
-  # - Make a TodoList CollectionView;
-  #     this view will handle the actual drawing of collection
-  #     note: the collectionView does _not_ have a template
-  #     hint: When instantiating the CollectionView, pass the collection as a parameter
-  # - Make a TodoItemView;
-  #     a collectionView needs an itemView: a view for each item in the collection
-  #     in our case, that is the name of the todo-able thing
-  #
-  # Bonus point:
-  # - Make a checkbox that sets a todo to 'completed'
-  # - Display how many todos have been completed;
-  #     hint: look at the documentation for collection for available helper functions
-  # - Make a delete button to delete a todo from the list
+  regions:
+    'collectionView': '#collections-view'
+
+  events:
+    'click #submit': 'addModel'
+
+  initialize: ->
+    @collection = new TodosCollection
+
+  addModel: (e) ->
+    e.preventDefault()
+    val =  @$('#todo').val()
+    unless _.isEmpty val
+      @collection.add new TodoModel({title: val})
+      @$('#todo').val('') #empty input after adding
+
+  onRender: ->
+    todosCollectionView = new TodosCollectionView(collection: @collection)
+    @collectionView.show todosCollectionView
 
 module.exports = CollectionsPage
