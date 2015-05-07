@@ -16,3 +16,6 @@ en:
     get: 'Get your current location!'
     longitude: 'Longitude'
     latitude: 'Latitude'
+  camera:
+    header: 'Camera'
+    button: 'Snap a photo!'

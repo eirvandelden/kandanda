@@ -44,5 +44,3 @@ This contains all assignment for the [Maji Mobile Training](http://maji.kabisa.n
 * Android platform 10+.
 * Ant (`brew install ant`)
 * `android` and `adb` in your $PATH (add `path/to/android-sdk-macosx/tools` and `path/to/android-sdk-macosx/platform-tools` to your $PATH).
-
-

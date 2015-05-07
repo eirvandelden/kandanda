@@ -15,3 +15,5 @@
       %a.assignment{href: '#/assignment3-collections', 'data-transition': 'slide'}= @t 'assignment3.name'
     %li
       %a.assignment{ href: '#/gps', 'data-transition': 'slide' }= @t 'gps.name'
+    %li
+      %a.assignment{href: '#/assignment4', 'data-transition': 'slideup'}= @t 'camera.header'
