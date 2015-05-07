@@ -7,3 +7,5 @@
     %strong Assignments:
 
   %ul.listview
+    %li
+      %a.assignment{href: '#/assignment1-debugger', 'data-transition': 'slide'}= @t 'assignment1'
