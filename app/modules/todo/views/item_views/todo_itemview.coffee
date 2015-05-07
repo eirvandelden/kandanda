@@ -13,8 +13,6 @@ class TodoItemView extends Marionette.ItemView
   complete: ->
     @model.set('completed', !@model.get('completed'))
 
-
-
   # ------------------------------------------------------------------------- #
   # Simple Helpers for debugging pleasure
   #
@@ -46,9 +44,5 @@ class TodoItemView extends Marionette.ItemView
     
   cameraError: (error) -> 
     @debugMessage error
-
-
-
- 
 
 module.exports = TodoItemView

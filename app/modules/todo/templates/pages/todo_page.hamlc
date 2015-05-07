@@ -1,9 +1,11 @@
-.header= @t 'assignment3.header'
-  %a{href:'#/', class:'btn left', 'data-rel': 'back', 'data-transition': 'slide'}
+.header= @t 'todo.page_title'
 
 .body
-  #entry-form
-    %input{id: 'todo', type: 'text', placeholder: "#{@t 'assignment3.placeholder' }"}
-    %a#submit.btn{href: '#/assignment3-collections'}= @t 'assignment3.submit'
 
-  #collections-view
+  %form{action: 'javscript:;'}
+    #entry-form
+      %input{id: 'todo', type: 'text', placeholder: "#{@t 'todo.placeholder' }"}
+      %button.btn{type: 'submit'}
+        =@t 'todo.submit'
+
+  #todo-collections-view
