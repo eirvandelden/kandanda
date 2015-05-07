@@ -5,5 +5,6 @@ class TodosCollectionView extends Marionette.CollectionView
   itemView: TodoItemView
   id: '#todoList'
   tagName: 'ul'
+  className: 'todos'
 
 module.exports = TodosCollectionView

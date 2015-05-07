@@ -2,10 +2,10 @@
 
 .body
 
-  %form{action: 'javscript:;'}
-    #entry-form
+  %form.new-todos{action: 'javscript:;'}
+    %div
       %input{id: 'todo', type: 'text', placeholder: "#{@t 'todo.placeholder' }"}
-      %button.btn{type: 'submit'}
+      %button{type: 'submit'}
         =@t 'todo.submit'
 
   #todo-collections-view
