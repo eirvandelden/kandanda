@@ -2,7 +2,7 @@ Maji = require('maji')
 bus  = require('../app').bus
 
 class ApplicationPage extends Maji.Page
-  events:
+ events:
     'click [data-rel=back]': 'goBack'
 
   constructor: ->

@@ -1,0 +1,11 @@
+.header= @t 'todo.page_title'
+
+.body
+
+  %form{action: 'javscript:;'}
+    #entry-form
+      %input{id: 'todo', type: 'text', placeholder: "#{@t 'todo.placeholder' }"}
+      %button.btn{type: 'submit'}
+        =@t 'todo.submit'
+
+  #todo-collections-view

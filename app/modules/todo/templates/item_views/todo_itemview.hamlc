@@ -1,0 +1,11 @@
+%input.complete{type: 'checkbox'}
+
+= @title
+
+- if @photo_path
+  %img.todo_photo{src: @photo_path}
+  %button.take_photo
+    =@t('todo.replace_photo')
+- else
+  %button.take_photo
+    =@t('todo.take_photo')
