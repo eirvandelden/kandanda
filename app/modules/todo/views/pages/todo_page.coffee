@@ -10,16 +10,20 @@ class CollectionsPage extends ApplicationPage
   template: template
 
   regions:
-    'collectionView': '#collections-view'
+    'collectionView': '#todo-collections-view'
 
   events:
-    'click #submit': 'addModel'
+    'click button[type="submit"]': 'addModel'
 
   initialize: ->
     @collection = new TodosCollection
     
-    # Create some basic items
-
+    # Create some basic todo items
+    @collection.add([
+      {title: "Come to Maji course", completed: true},
+      {title: "Get lunch!", photo_path: '/assets/images/lunch.jpg' },
+      {title: "Finish Maji course"} 
+    ])
 
 
   addModel: (e) ->
