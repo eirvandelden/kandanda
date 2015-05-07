@@ -1,0 +1,13 @@
+.header= @t 'assignment2'
+  %a{href:'#/', class:'btn left', 'data-rel': 'back'}
+
+.body
+  #person-form
+    %p
+      Here we will use input fields to 'edit' the model
+    %ul
+      %li
+        %label.name= @t 'person.name'
+        %input.name
+
+  #person-region

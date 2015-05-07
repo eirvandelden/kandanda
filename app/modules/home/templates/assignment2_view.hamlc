@@ -1,0 +1,5 @@
+%p
+  Here is where the PersonItemView is rendered
+
+%strong= @t('person.name')
+= @name #this syntax displays the 'name' attribute of a model

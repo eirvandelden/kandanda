@@ -1,3 +1,8 @@
 en:
   hello: 'Here are a list of assignments for the Maji Mobile Training'
   assignment1: 'A1: Using Backbone from the Console'
+  assignment2: 'A2: Models and Views'
+  person:
+    name: 'Name'
+    address: 'Address'
+    city: 'City'
