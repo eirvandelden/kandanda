@@ -18,17 +18,15 @@ class CollectionsPage extends ApplicationPage
   initialize: ->
     @collection = new TodosCollection
     
-    # Create some basic todo items
     @collection.add([
-      {title: "Come to Maji course", completed: true},
-      {title: "Get lunch!", photo_path: '/assets/images/lunch.jpg' },
-      {title: "Finish Maji course"} 
+      { title: 'Come to Maji course', completed: true },
+      { title: 'Get lunch!', photo_path: '/assets/images/lunch.jpg' },
+      { title: 'Finish Maji course' }
     ])
-
 
   addModel: (e) ->
     e.preventDefault()
-    val =  @$('#todo').val()
+    val = @$('#todo').val()
     unless _.isEmpty val
       @collection.add new TodoModel({title: val})
       @$('#todo').val('') #empty input after adding
@@ -36,13 +34,5 @@ class CollectionsPage extends ApplicationPage
   onRender: ->
     todosCollectionView = new TodosCollectionView(collection: @collection)
     @collectionView.show todosCollectionView
-    t = new TodoModel()
-    t.has_photo()
-
-   
-
-
-
-  # ------------------------------------------------------------------------- #
 
 module.exports = CollectionsPage

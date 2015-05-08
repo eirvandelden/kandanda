@@ -1,12 +1,8 @@
-%input.complete{type: 'checkbox'}
-
 - if @photo_path
-  %img.todo_photo{src: @photo_path}
-  %button.take_photo
-    =@t('todo.replace_photo')
-- else
-  %button.take_photo
-    =@t('todo.take_photo')
+  %img.todo_photo{ src: @photo_path }
+
+%button.take_photo
+  = @t "#{ if @hasPhoto then 'todo.replace_photo' else 'todo.take_photo'}"
 
 = @title
 

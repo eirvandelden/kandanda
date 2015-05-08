@@ -4,46 +4,34 @@ template   = require '../../templates/item_views/todo_itemview'
 class TodoItemView extends Marionette.ItemView
   template: template
   tagName: 'li'
-  className: 'todo'
+  className: -> if @model.get 'completed' then 'todo completed' else 'todo'
 
   events:
-    'click input.complete': 'complete'
+    'click .finish': 'toggleCompletion'
     'click button.take_photo': 'takePhoto'
 
-  complete: ->
-    @model.set('completed', !@model.get('completed'))
+  toggleCompletion: ->
+    @model.toggle()
+    @$el.toggleClass 'completed'
 
-  # ------------------------------------------------------------------------- #
-  # Simple Helpers for debugging pleasure
-  #
-  debugMessage: (message) ->
-    console.log message
-    alert message
-    # TODO: CREATE debug.div
-    $('#debug').append('<br>' + message)
-
-  # ------------------------------------------------------------------------- #
-  # Cordova Camera Plugin
-  #
   takePhoto: ->
     if navigator && navigator.camera && Camera
       try
         navigator.camera.getPicture(
-          @cameraSuccess, 
+          @cameraSuccess,
           @cameraError,
           { quality: 50, destinationType: Camera.DestinationType.FILE_URI }
         )
       catch e
-        @debugMessage e
+        alert e
     else
-      @debugMessage "Camera not detected!"
+      alert 'No camera detected.'
 
   # after taking the photo, store it in the model
   cameraSuccess: (url) ->
     @model.store_photo(url)
-    # $('img.todo_photo').attr('src', url)
     
-  cameraError: (error) -> 
+  cameraError: (error) ->
     @debugMessage error
 
 module.exports = TodoItemView
