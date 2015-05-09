@@ -1,9 +1,7 @@
 en:
  todo:
-    page_title: 'My Awesome TODO app'
-    header: 'Todo App'
-    placeholder: 'What needs to be done?'
+    page_title: 'Maji Todo App'
+    placeholder: 'clear your mind…'
     submit: 'Add'
-    take_photo: "Take a picture"
-    replace_photo: "Replace picture"
-
+    take_photo: "Take photo"
+    replace_photo: "Replace photo"

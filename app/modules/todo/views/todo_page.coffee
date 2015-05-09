@@ -13,7 +13,7 @@ class CollectionsPage extends ApplicationPage
     'collectionView': '#todo-collections-view'
 
   events:
-    'click button[type="submit"]': 'addModel'
+    'click button#add': 'addModel'
 
   initialize: ->
     @collection = new TodosCollection

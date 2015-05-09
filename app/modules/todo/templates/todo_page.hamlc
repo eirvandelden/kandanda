@@ -3,8 +3,8 @@
 .body
 
   %form.new-todos
-    %input{ id: 'todo', type: 'text', placeholder: "#{ @t 'todo.placeholder' }" }
-    %button{ type: 'submit' }
+    %input#todo{  type: 'text', placeholder: "#{ @t 'todo.placeholder' }" }
+    %button#add{ type: 'submit' }
       =@t 'todo.submit'
 
   #todo-collections-view
