@@ -1,0 +1,10 @@
+.header= @t 'todo.page_title'
+
+.body
+
+  %form.new-todos
+    %input{ id: 'todo', type: 'text', placeholder: "#{ @t 'todo.placeholder' }" }
+    %button{ type: 'submit' }
+      =@t 'todo.submit'
+
+  #todo-collections-view

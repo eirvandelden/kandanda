@@ -1,5 +1,5 @@
 Marionette = require 'backbone.marionette'
-template   = require '../../templates/item_views/todo_itemview'
+template   = require '../templates/todo_itemview'
 
 class TodoItemView extends Marionette.ItemView
   template: template
@@ -29,9 +29,9 @@ class TodoItemView extends Marionette.ItemView
 
   # after taking the photo, store it in the model
   cameraSuccess: (url) ->
-    @model.store_photo(url)
-    
+    @model.storePhoto url
+
   cameraError: (error) ->
-    @debugMessage error
+    alert error
 
 module.exports = TodoItemView

@@ -6,14 +6,14 @@ class TodoModel extends Backbone.Model
     'completed': false
 
   hasPhoto: ->
-    photo_path = @get('photo_path')
-    !_.isEmpty photo_path && _.isString photo_path
+    photoPath = @get 'photoPath'
+    !_.isEmpty(photoPath) && _.isString(photoPath)
 
   photoSrc: ->
-    if @hasPhoto then @get 'photo_path' else null
+    if @hasPhoto then @get 'photoPath' else null
 
-  store_photo: (url) ->
-    @set 'photo_path',url
+  storePhoto: (url) ->
+    @set 'photoPath', url
 
   toggle: ->
     @set 'completed', !@get 'completed'

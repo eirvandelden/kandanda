@@ -1,5 +1,5 @@
 Marionette   = require 'backbone.marionette'
-TodoItemView = require './../item_views/todo_itemview'
+TodoItemView = require './todo_itemview'
 
 class TodosCollectionView extends Marionette.CollectionView
   itemView: TodoItemView
