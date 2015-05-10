@@ -9,9 +9,6 @@ _                   = require 'underscore'
 class CollectionsPage extends ApplicationPage
   template: template
 
-  regions:
-    'collectionView': '#todo-collections-view'
-
   events:
     'click button#add': 'addModel'
 
@@ -27,6 +24,6 @@ class CollectionsPage extends ApplicationPage
 
   onRender: ->
     todosCollectionView = new TodosCollectionView collection: @collection
-    @collectionView.show todosCollectionView
+    @$('#todo-collections-view').append todosCollectionView.render().el
 
 module.exports = CollectionsPage
