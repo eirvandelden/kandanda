@@ -1,10 +1,19 @@
-.header= @t 'todo.page_title'
+.header= 'maji-todo'
 
 .body
 
-  %form.new-todos
-    %input#todo{  type: 'text', placeholder: "#{ @t 'todo.placeholder' }" }
-    %button#add{ type: 'submit' }
-      =@t 'todo.submit'
+  %form.new-todos{name: 'new-todos'}
+    %input{type: 'text', name: 'new-todo'}
+    %button{type: 'submit'} Toevoegen
 
-  #todo-collections-view
+  %ul.todos
+    %li
+      %img{src: 'http://upload.wikimedia.org/wikipedia/commons/c/c4/PM5544_with_non-PAL_signals.png'}
+      Dit is een voorbeeld-todo.
+      %button.finish
+        Done!
+      %li
+        %img{src: 'http://upload.wikimedia.org/wikipedia/commons/c/c4/PM5544_with_non-PAL_signals.png'}
+        Dit is er nog een.
+        %button.finish
+          Done!
