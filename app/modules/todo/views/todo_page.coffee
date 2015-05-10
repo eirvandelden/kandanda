@@ -1,7 +1,7 @@
 ApplicationPage     = require '../../../views/application_page'
 TodosCollectionView = require './todos_collectionview'
-TodoModel           = require '../models/todo_model'
 TodosCollection     = require '../collections/todos_collection'
+TodoModel           = require '../models/todo_model'
 template            = require '../templates/todo_page'
 $                   = require 'jquery'
 _                   = require 'underscore'
@@ -14,6 +14,10 @@ class CollectionsPage extends ApplicationPage
 
   initialize: ->
     @collection = new TodosCollection
+    @todosCollectionView = new TodosCollectionView collection: @collection
+
+  onRender: ->
+    @$('#todo-collections-view').append @todosCollectionView.render().el
 
   addModel: (e) ->
     e.preventDefault()
@@ -21,9 +25,5 @@ class CollectionsPage extends ApplicationPage
     unless _.isEmpty val
       @collection.add new TodoModel({title: val})
       @$('#todo').val '' #empty input after adding
-
-  onRender: ->
-    todosCollectionView = new TodosCollectionView collection: @collection
-    @$('#todo-collections-view').append todosCollectionView.render().el
 
 module.exports = CollectionsPage

@@ -1,7 +1,7 @@
 Backbone  = require 'backbone'
 TodoModel = require '../models/todo_model'
 
-class TodoCollection extends Backbone.Collection
+class TodosCollection extends Backbone.Collection
   model: TodoModel
 
-module.exports = TodoCollection
+module.exports = TodosCollection
