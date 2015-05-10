@@ -16,7 +16,6 @@ class CollectionsPage extends ApplicationPage
     'click button#add': 'addModel'
 
   initialize: ->
-    @collection = new TodosCollection
 
   addModel: (e) ->
     e.preventDefault()
@@ -26,7 +25,5 @@ class CollectionsPage extends ApplicationPage
       @$('#todo').val '' #empty input after adding
 
   onRender: ->
-    todosCollectionView = new TodosCollectionView collection: @collection
-    @collectionView.show todosCollectionView
 
 module.exports = CollectionsPage
