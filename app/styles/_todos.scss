@@ -30,6 +30,10 @@
     }
   }
 
+  .completed {
+    color: $color-form-input-border;
+  }
+
   img {
     position: absolute;
     top: 0;
@@ -37,11 +41,14 @@
     height: 100%;
   }
 
-  .finish {
-    float: right;
+  button {
     background-color: $color-form-input-border;
     color: $color-primary-text;
     border: 0;
     border-radius: 3px;
+  }
+
+  .finish {
+    float: right;
   }
 }

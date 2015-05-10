@@ -10,6 +10,9 @@ class TodoItemView extends Marionette.ItemView
     'click .finish': 'toggleCompletion'
     'click button.take_photo': 'takePhoto'
 
+  modelEvents: ->
+    'change': 'render'
+
   toggleCompletion: ->
     @model.toggle()
     @$el.toggleClass 'completed'
@@ -27,8 +30,7 @@ class TodoItemView extends Marionette.ItemView
     else
       alert 'No camera detected.'
 
-  # after taking the photo, store it in the model
-  cameraSuccess: (url) ->
+  cameraSuccess: (url) =>
     @model.storePhoto url
 
   cameraError: (error) ->
