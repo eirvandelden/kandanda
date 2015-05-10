@@ -6,7 +6,7 @@ TodoApp.startWithParent = false
 
 class TodoApp.Router extends Marionette.AppRouter
   appRoutes:
-    'assignment3-collections' : 'todo'
+    '': 'todo'
 
 API =
   todo: ->
