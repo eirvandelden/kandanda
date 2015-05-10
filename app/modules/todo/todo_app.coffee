@@ -10,8 +10,8 @@ class TodoApp.Router extends Marionette.AppRouter
 
 API =
   todo: ->
-    TodoPage = require './views/pages/todo_page'
-    app.mainRegion.show new TodoPage()
+    TodoAppPage = require './views/todo_page'
+    app.mainRegion.show new TodoAppPage()
 
 TodoApp.addInitializer ->
   new TodoApp.Router
