@@ -2,7 +2,7 @@
   %img.todo_photo{ src: @photoPath }
 
 %button.take_photo
-  = @t "#{ if @photoPath then 'todo.replace_photo' else 'todo.take_photo' }"
+  = @t "#{ if @photoPath then 'camera.replace' else 'camera.take' }"
 
 = @title
 
