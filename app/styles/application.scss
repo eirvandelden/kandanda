@@ -20,7 +20,7 @@ html, body {
 
 a, a:active, a:hover, a:visited {
   text-decoration: none;
-  color: #000;
+  color: $color-primary-link;
 }
 
 #maji-app {
@@ -35,7 +35,7 @@ a, a:active, a:hover, a:visited {
   top: 0px;
 
   z-index: 2;
-  background: #fff;
+  background: $color-primary-text;
 
   &.animated .header, &.slideout {
     position: absolute;
