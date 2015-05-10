@@ -28,6 +28,10 @@
     &:last-child {
       border-bottom: 1px solid $color-form-input-border;
     }
+
+    .completed {
+      color: $color-form-input-border;
+    }
   }
 
   img {
