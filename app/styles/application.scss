@@ -4,6 +4,7 @@
 @import 'fonts/icons';
 @import 'variables';
 @import 'forms';
+@import 'todos';
 @import 'platforms/ios';
 
 @charset 'utf-8';
@@ -19,7 +20,7 @@ html, body {
 
 a, a:active, a:hover, a:visited {
   text-decoration: none;
-  color: #000;
+  color: $color-primary-link;
 }
 
 #maji-app {
@@ -34,7 +35,7 @@ a, a:active, a:hover, a:visited {
   top: 0px;
 
   z-index: 2;
-  background: #fff;
+  background: $color-primary-text;
 
   &.animated .header, &.slideout {
     position: absolute;
@@ -87,94 +88,4 @@ a, a:active, a:hover, a:visited {
 .body {
   padding: 65px 15px 15px;
   box-sizing: border-box;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px;
-  color: white !important;
-  background: green;
-}
-
-.listview {
-  list-style-type: none;
-  padding: 0;
-
-  margin: -15px;
-
-  li {
-    @include icon(back, after);
-
-    position: relative;
-    padding: 10px 15px;
-
-    border-bottom: 1px solid #e8e8e8;
-
-    &:after {
-      font-size: 12px;
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      margin-top: -6px;
-      transform: rotate(180deg);
-    }
-
-    a {
-      display: block;
-      margin: -10px -15px;
-      padding: 10px 15px;
-
-      -webkit-tap-highlight-color: rgba(130, 130, 130, 0.2);
-    }
-  }
-}
-
-/**
- * Nieuwe todo's toevoegen
- */
-.new-todos {
-  button {
-    display: block;
-    margin: 0 auto;
-
-    background-color: #004c9c;
-    color: white;
-    padding: 1em 2em;
-    border: none;
-    border-radius: 3px;
-  }
-}
-
-/**
- * Lijst van todo's
- */
-.todos {
-  list-style: none;
-  padding: 0;
-
-  li {
-    padding: 1em;
-    position: relative;
-    text-indent: 5em;
-    border-top: 1px solid lightgrey;
-
-    &:last-child {
-      border-bottom: 1px solid lightgrey;
-    }
-  }
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-  }
-
-  .finish {
-    float: right;
-    background-color: lightgrey;
-    color: white;
-    border: none;
-    border-radius: 3px;
-  }
 }
