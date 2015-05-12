@@ -7,8 +7,8 @@ class TodoItemView extends Marionette.ItemView
   className: -> if @model.get 'completed' then 'todo completed' else 'todo'
 
   events:
-    'click .finish': 'toggleCompletion'
-    'click button.take_photo': 'takePhoto'
+    'click .todo-finish': 'toggleCompletion'
+    'click .todo-photo': 'takePhoto'
 
   modelEvents: ->
     'change': 'render'

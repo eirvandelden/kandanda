@@ -1,10 +1,10 @@
 - if @photoPath
-  %img.todo_photo{ src: @photoPath }
+  %img.todo-photo{ src: @photoPath }
+- else
+  %img.todo-photo{ src: '/assets/images/camera.svg' }
 
-%button.take_photo
-  = @t "#{ if @photoPath then 'camera.replace' else 'camera.take' }"
+%span.todo-title
+  = @title
 
-= @title
-
-%button.finish
+%button.todo-finish
   Done
