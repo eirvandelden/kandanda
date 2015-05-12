@@ -1,7 +1,7 @@
 - if @photoPath
   %img.todo-photo{ src: @photoPath }
 - else
-  %img.todo-photo{ src: '/assets/images/camera.svg' }
+  %img.todo-photo{ src: 'assets/images/camera.svg' }
 
 %span.todo-title
   = @title
