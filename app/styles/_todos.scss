@@ -35,15 +35,16 @@
     }
   }
 
-  .todo-title {
-    display: inline-block;
-    padding-top: 0.8em;
-  }
-
   .todo-photo {
     cursor: pointer;
     float: left;
     height: 3em;
+    margin-right: 0.5em;
+  }
+
+  .todo-title {
+    display: inline-block;
+    padding-top: 0.8em;
   }
 
   .todo-finish {
