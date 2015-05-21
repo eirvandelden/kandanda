@@ -1,0 +1,7 @@
+.header
+  =@t 'library.header'
+  %a.back{href:'#/', class:'btn right', 'data-rel': 'back'}= @t 'todo.page_title'
+
+.body
+  %button#fetch= @t 'library.fetch'
+  %img.photo

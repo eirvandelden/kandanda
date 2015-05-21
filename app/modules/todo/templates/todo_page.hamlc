@@ -1,4 +1,6 @@
-.header= @t 'todo.page_title'
+.header
+  = @t 'todo.page_title'
+  %a#library{href:'#/library', class:'btn right', data-transition: 'flip'}= @t 'library.header'
 
 .body
 

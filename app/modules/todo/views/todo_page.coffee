@@ -14,6 +14,7 @@ class CollectionsPage extends ApplicationPage
 
   events:
     'click button#add': 'addModel'
+    'click a#library': 'navigateTo'
 
   initialize: ->
     @collection = new TodosCollection
@@ -28,5 +29,9 @@ class CollectionsPage extends ApplicationPage
   onRender: ->
     todosCollectionView = new TodosCollectionView collection: @collection
     @collectionView.show todosCollectionView
+
+  navigateTo: (e) ->
+    e.preventDefault()
+    @navigate $(e.target).attr('href'), transition: $(e.target).data('transition')
 
 module.exports = CollectionsPage

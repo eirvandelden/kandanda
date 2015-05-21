@@ -4,6 +4,8 @@
     <description></description>
     <content src="index.html" />
     <access origin="*" />
+    <!-- whitelist -->
+    <access origin="support.promesse.net" />
 
     <preference name="DisallowOverscroll" value="true"/>
     <preference name="Orientation" value="portrait" />

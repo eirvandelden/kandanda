@@ -7,3 +7,6 @@ en:
     take: 'Take photo'
     replace: 'Replace photo'
     missing: 'No camera detected.'
+  library:
+    header: 'Library'
+    fetch: 'Get example library'
