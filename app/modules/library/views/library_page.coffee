@@ -15,11 +15,13 @@ class LibraryPage extends ApplicationPage
   fetchModels: ->
     #try this is a thin arrow
     console.log 'fetching models'
+    
+    
     libraryService.fetchLibrary()
       .then (response) ->
         console.log 'afbeelding', response
         console.log 'afbeelding', response['sAfbeelding']
-        $('.photo').attr('src', 'data:image/jpeg;base64,' + response['sAfbeelding'])
+        $('.photo').html(response['sSerienummer'])
       .fail (error) ->
         console.log 'failed', error
         alert 'failed to fetch data from the server'
